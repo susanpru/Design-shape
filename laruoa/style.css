@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  margin-left: 0;
+  box-sizing: border-box;
+  font-family: Roboto, Arial, sans-serif;
+}
+header {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background: blue;
+  border-bottom-right-radius: 60%;
+}
+.object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 80%;
+  background: pink;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  padding-bottom: 2rem;
+  align-items: flex-end;
+  border-bottom-left-radius: 50%;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.nav__li {
+  padding: 1rem;
+}
+.nav__link {
+  color: blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all .3s;
+}
+.nav__link:hover {
+  opacity: .6;
+}
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 0;
+  margin-left: 3px;
+  height: 60px;
+  background: pink;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-wrapper {
+  color: #fff;
+  font-family: cursive;
+  font-size: 1.5rem;
+  z-index: 3;
+  padding: 1rem;
+  text-align: center;
+}
+.object__text {
+  margin: auto;
+  text-align: center;
+}
+.object__header {
+  color: #fff;
+  font-size: 2.8rem;
+  margin-bottom: 3.8rem;
+}
+.object__cta {
+  color: #fff;
+  padding: 1.3rem 2.6rem;
+  border: 2px solid #fff;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all .4s;
+}
+.object__cta:hover {
+  opacity: .3;
+}
+
+/***************** team__2 ******************/
+.team__2 {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  background-image: linear-gradient(rgba(77, 0, 77, .4), rgba(255, 255, 255, .3)), url("images/overlaypic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.team__2 ul {
+  display: flex;
+  list-style: none;
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.large {
+  font-weight: bold;
+  font-size: 5rem;
+}
+.team__2 li {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/************ portfolio ************/
+
+
+
+@media (max-width: 780px) {
+  .navbar {
+    height: auto;
+  }
+  .nav__list {
+
+  }
+  .nav__li {
+    padding: .5rem;
+  }
+  .object {
+    padding: .7rem;
+    width: 65%;
+    height: 60%;
+  }
+  .object__header {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .object__cta {
+    color: #fff;
+    padding: .5rem 1rem;
+    border: 2px solid #fff;
+    font-size: 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all .4s;
+  }
+  .team__2 {
+    height: auto;
+  }
+  .team__2__ul {
+    padding: 2rem;
+  }
+  .large {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .team__2 li {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
